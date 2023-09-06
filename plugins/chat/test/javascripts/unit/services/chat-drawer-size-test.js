@@ -1,5 +1,5 @@
 import { module, test } from "qunit";
-import { getOwner } from "discourse-common/lib/get-owner";
+import { getOwner } from "@ember/application";
 
 module("Discourse Chat | Unit | Service | chat-drawer-size", function (hooks) {
   hooks.beforeEach(function () {

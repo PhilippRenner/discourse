@@ -7,7 +7,7 @@ import { cloneJSON } from "discourse-common/lib/object";
 import { chatComposerButtons } from "discourse/plugins/chat/discourse/lib/chat-composer-buttons";
 import showModal from "discourse/lib/show-modal";
 import TextareaInteractor from "discourse/plugins/chat/discourse/lib/textarea-interactor";
-import { getOwner } from "discourse-common/lib/get-owner";
+import { getOwner } from "@ember/application";
 import userSearch from "discourse/lib/user-search";
 import { findRawTemplate } from "discourse-common/lib/raw-templates";
 import { emojiSearch, isSkinTonableEmoji } from "pretty-text/emoji";

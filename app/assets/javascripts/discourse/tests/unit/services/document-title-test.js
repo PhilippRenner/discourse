@@ -1,6 +1,6 @@
 import { module, test } from "qunit";
 import { setupTest } from "ember-qunit";
-import { getOwner } from "discourse-common/lib/get-owner";
+import { getOwner } from "@ember/application";
 import { currentUser } from "discourse/tests/helpers/qunit-helpers";
 import Session from "discourse/models/session";
 

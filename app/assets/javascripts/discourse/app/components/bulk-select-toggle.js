@@ -1,6 +1,6 @@
 import Component from "@ember/component";
 import { action } from "@ember/object";
-import { getOwner } from "discourse-common/lib/get-owner";
+import { getOwner } from "@ember/application";
 
 export default Component.extend({
   parentController: null,

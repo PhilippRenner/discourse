@@ -1,4 +1,4 @@
-import { getOwner } from "discourse-common/lib/get-owner";
+import { getOwner } from "@ember/application";
 import ChatMessagesManager from "discourse/plugins/chat/discourse/lib/chat-messages-manager";
 import { escapeExpression } from "discourse/lib/utilities";
 import { tracked } from "@glimmer/tracking";

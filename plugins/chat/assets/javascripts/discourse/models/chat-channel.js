@@ -5,7 +5,7 @@ import { tracked } from "@glimmer/tracking";
 import slugifyChannel from "discourse/plugins/chat/discourse/lib/slugify-channel";
 import ChatThreadsManager from "discourse/plugins/chat/discourse/lib/chat-threads-manager";
 import ChatMessagesManager from "discourse/plugins/chat/discourse/lib/chat-messages-manager";
-import { getOwner } from "discourse-common/lib/get-owner";
+import { getOwner } from "@ember/application";
 import guid from "pretty-text/guid";
 import ChatThread from "discourse/plugins/chat/discourse/models/chat-thread";
 import ChatDirectMessage from "discourse/plugins/chat/discourse/models/chat-direct-message";

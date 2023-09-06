@@ -1,6 +1,6 @@
 import LinkLookup from "discourse/lib/link-lookup";
 import { module, test } from "qunit";
-import { getOwner } from "discourse-common/lib/get-owner";
+import { getOwner } from "@ember/application";
 
 module("Unit | Utility | link-lookup", function (hooks) {
   hooks.beforeEach(function () {

@@ -11,7 +11,7 @@ import { hbs } from "ember-cli-htmlbars";
 import EmberObject from "@ember/object";
 import I18n from "I18n";
 import User from "discourse/models/user";
-import { getOwner } from "discourse-common/lib/get-owner";
+import { getOwner } from "@ember/application";
 
 module("Integration | Component | Widget | post", function (hooks) {
   setupRenderingTest(hooks);

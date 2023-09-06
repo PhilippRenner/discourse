@@ -26,7 +26,7 @@ import deprecated from "discourse-common/lib/deprecated";
 import discourseDebounce from "discourse-common/lib/debounce";
 import { emojiUnescape } from "discourse/lib/text";
 import { escapeExpression, modKeysPressed } from "discourse/lib/utilities";
-import { getOwner } from "discourse-common/lib/get-owner";
+import { getOwner } from "@ember/application";
 import getURL from "discourse-common/lib/get-url";
 import { isEmpty } from "@ember/utils";
 import { isTesting } from "discourse-common/config/environment";

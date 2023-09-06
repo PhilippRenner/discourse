@@ -10,7 +10,7 @@ import { cookAsync } from "discourse/lib/text";
 import { notEmpty } from "@ember/object/computed";
 import { propertyNotEqual } from "discourse/lib/computed";
 import { schedule } from "@ember/runloop";
-import { getOwner } from "discourse-common/lib/get-owner";
+import { getOwner } from "@ember/application";
 import { applyLocalDates } from "discourse/lib/local-dates";
 import generateDateMarkup from "discourse/plugins/discourse-local-dates/lib/local-date-markup-generator";
 

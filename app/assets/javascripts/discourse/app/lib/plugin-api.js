@@ -79,7 +79,7 @@ import { addWidgetCleanCallback } from "discourse/components/mount-widget";
 import deprecated from "discourse-common/lib/deprecated";
 import { disableNameSuppression } from "discourse/widgets/poster-name";
 import { extraConnectorClass } from "discourse/lib/plugin-connectors";
-import { getOwner } from "discourse-common/lib/get-owner";
+import { getOwnerWithFallback } from "discourse-common/lib/get-owner";
 import { h } from "virtual-dom";
 import { includeAttributes } from "discourse/lib/transform-post";
 import { modifySelectKit } from "select-kit/mixins/plugin-api";
@@ -2477,7 +2477,7 @@ function getPluginApi(version) {
   version = version.toString();
 
   if (cmpVersions(version, PLUGIN_API_VERSION) <= 0) {
-    const owner = getOwner(this);
+    const owner = getOwnerWithFallback(this);
     let pluginApi = owner.lookup("plugin-api:main");
 
     if (!pluginApi) {

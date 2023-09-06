@@ -1,5 +1,5 @@
 import { module, test } from "qunit";
-import { getOwner } from "discourse-common/lib/get-owner";
+import { getOwner } from "@ember/application";
 import pretender from "discourse/tests/helpers/create-pretender";
 import { settled } from "@ember/test-helpers";
 

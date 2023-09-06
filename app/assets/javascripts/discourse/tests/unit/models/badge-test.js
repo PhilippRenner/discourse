@@ -1,7 +1,7 @@
 import { module, test } from "qunit";
 import Badge from "discourse/models/badge";
 import { setupTest } from "ember-qunit";
-import { getOwner } from "discourse-common/lib/get-owner";
+import { getOwner } from "@ember/application";
 
 module("Unit | Model | badge", function (hooks) {
   setupTest(hooks);

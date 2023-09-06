@@ -5,7 +5,7 @@ import sinon from "sinon";
 import { settled } from "@ember/test-helpers";
 import User from "discourse/models/user";
 import pretender, { response } from "discourse/tests/helpers/create-pretender";
-import { getOwner } from "discourse-common/lib/get-owner";
+import { getOwner } from "@ember/application";
 
 module("Unit | Model | user", function (hooks) {
   setupTest(hooks);
