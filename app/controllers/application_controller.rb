@@ -927,11 +927,11 @@ class ApplicationController < ActionController::Base
 
     if !SiteSetting.login_required? || @current_user
       key = "page_not_found_topics:#{I18n.locale}"
+      category_topic_ids = Category.select(:topic_id).where.not(topic_id: nil)
       @topics_partial =
         Discourse
           .cache
           .fetch(key, expires_in: 10.minutes) do
-            category_topic_ids = Category.pluck(:topic_id).compact
             @top_viewed =
               TopicQuery
                 .new(nil, except_topic_ids: category_topic_ids)
